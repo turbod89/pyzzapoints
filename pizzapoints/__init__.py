@@ -1,0 +1,1 @@
+from .pizzapoints import app

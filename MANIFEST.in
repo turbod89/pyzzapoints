@@ -1,0 +1,4 @@
+graft pizzapoints/templates
+graft pizzapoints/static
+include pizzapoints/schema.sql
+include pizzapoints/models.sql

@@ -12,3 +12,9 @@ class User(db.Model):
 
     def __repr__(self):
         return '<User %r>' % self.screenName
+
+
+tags = db.Table('tags',
+    db.Column('tag_id', db.Integer, db.ForeignKey('tag.id'), primary_key=True),
+    db.Column('page_id', db.Integer, db.ForeignKey('page.id'), primary_key=True)
+)
